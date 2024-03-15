@@ -25,3 +25,6 @@ This is because the behaviour of `complex_function` is non-deterministic (depend
 
 Such non-deterministic behaviour is not uncommon in real-world software system.
 How can we test such non-deterministic behaviour? Think about this. (No need to implement anything)
+
+- The random.random() function could be replaced with a function that always returns a fixed value, meaning the test would always get the same result
+- A similar way of achieving the same thing would be to use seeding to make sure that the random function always returns the same value whilst testing
